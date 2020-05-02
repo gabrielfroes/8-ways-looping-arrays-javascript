@@ -19,7 +19,7 @@ const videoResolutions = [
 ]
 
 const resolution16_9 = videoResolutions.filter((value) => {
-    if (value[2] == '16:9') return value
+    return value[2] === '16:9'
 })
 
 console.log(resolution16_9)
