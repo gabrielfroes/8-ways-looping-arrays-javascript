@@ -18,8 +18,6 @@ const videoResolutions = [
     ['10K UHDTV', '10328×7760', '4:3'],
 ]
 
-const resolution16_9 = videoResolutions.filter((value) => {
-    return value[2] === '16:9'
-})
+const resolution16_9 = videoResolutions.filter((value) => (value[2] === '16:9'))
 
 console.log(resolution16_9)
