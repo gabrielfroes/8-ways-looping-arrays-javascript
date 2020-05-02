@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            margin: 5px auto;
+            width: 500px;
+            height: 200px;
+            background-color: blueviolet;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick='divs.forEach(hide)'>Esconder</button>
+    <button onclick='divs.forEach(show)'>Mostrar</button>
+
+    <div class="container">
+        <div class="block">Bloco 1</div>
+        <div class="block">Bloco 2</div>
+        <div class="block">Bloco 3</div>
+        <div class="block">Bloco 4</div>
+        <div class="block">Bloco 5</div>
+        <div class="block">Bloco 6</div>
+        <div class="block">Bloco 7</div>
+        <div class="block">Bloco 8</div>
+    </div>
+
+    <script>
+        const divs = Array.from(document.querySelectorAll('.block'))
+        const hide = el => el.style.display = 'none'
+        const show = el => el.style.display = 'block'
+    </script>
+
+</body>
+
+</html>
