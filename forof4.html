@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of</title>
+</head>
+<style>
+    article p {
+        font-family: monospace;
+        font-size: 15pt;
+        margin: 2px;
+        padding: 5px;
+        font-weight: bold;
+        background-color: yellow
+    }
+
+    .read {
+        font-weight: normal;
+        background-color: #f0f0f0;
+    }
+</style>
+
+<body>
+
+    <article>
+        <p>Este é o canal Código Fonte (que começou com um Blog) e que nós chamamos carinhosamente de CDFTV ou o canal
+            dos CDFs no Youtube.</p>
+        <p>Nossos CDFs são os nossos "CóDigo Fonters"!</p>
+        <p>Desde de Janeiro de 2016 o canal publica vídeos semanalmente comigo (Gabriel Fróes) e minha esposa Vanessa
+            Weber.</p>
+        <p>Somos um casal de programadores apaixonados por tecnologia desde 1996 e por aqui temos a missão de ajudar a
+            todos que queiram trabalhar com TI.</p>
+        <p>Falamos sobre esse mundo maravilhoso da programação de uma forma diferente e divertida, além de contar nossas
+            experiências na área.</p>
+    </article>
+
+    <button onclick="marcar()">Marcar todos como lido</button>
+    <button onclick="marcar(false)">Marcar todos como não lido</button>
+
+
+    <script>
+        const marcar = (lido = true) => {
+            const paragrafos = document.querySelectorAll('article p')
+            for (paragrafo of paragrafos) {
+                (lido) ?
+                paragrafo.classList.add('read'):
+                    paragrafo.classList.remove('read')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
