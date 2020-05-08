@@ -15,6 +15,6 @@ const videos = [{
     },
 ]
 
-for (video of videos) {
+for (let video of videos) {
     console.log(video)
 }
