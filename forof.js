@@ -8,6 +8,6 @@ const bolsaVanessa = [
     'alcool gel'
 ]
 
-for (item of bolsaVanessa) {
+for (let item of bolsaVanessa) {
     console.log(item)
 }

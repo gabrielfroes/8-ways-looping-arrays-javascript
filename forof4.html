@@ -43,7 +43,7 @@
     <script>
         const marcar = (lido = true) => {
             const paragrafos = document.querySelectorAll('article p')
-            for (paragrafo of paragrafos) {
+            for (let paragrafo of paragrafos) {
                 (lido) ?
                 paragrafo.classList.add('read'):
                     paragrafo.classList.remove('read')

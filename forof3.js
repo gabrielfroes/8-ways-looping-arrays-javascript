@@ -1,5 +1,5 @@
 const canal = "Código Fonte TV"
 
-for (letra of canal) {
+for (let letra of canal) {
     console.log(letra)
 }
